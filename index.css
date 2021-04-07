@@ -1,0 +1,188 @@
+html {
+    scroll-behavior: smooth;
+  }
+body p{
+    color:white;
+    font-family: "Varela Round";
+}
+body h2{
+    color:white;
+    font-family: "Varela Round";
+}
+body h4{
+    color:white;
+    font-family: "Varela Round";
+}
+body a{
+    color:white;
+    font-family: "Varela Round";
+    text-decoration: none;
+}
+
+#glavnaSekcija{
+    position: absolute;
+    top:0;
+    opacity:0;
+}
+.background{
+
+    width:auto;
+    height:95vh;
+    position:fixed;
+    top:0;
+    z-index:-1;
+  
+}
+.background img{
+    width:100vw;
+    height:100vh;
+}
+
+.introduction{
+    
+    width:35vw;
+    height:400px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top:15vw;
+    margin-left:5vw;
+    
+}
+
+.introduction h2{
+    font-size:3.5vw;
+    font-weight: bold;
+}
+
+#uvod .introductionP p{
+    font-size:1.4vw;
+    margin-top:1vw;
+}
+
+#uvod .header{
+    display:flex;
+    width:35vw;
+    justify-content: space-around;
+    margin-top:2vw;
+    
+}
+.header p{
+    font-size:1.2vw;
+    cursor: pointer;
+}
+.header p:hover{
+    color:#1Db954;
+}
+.header a:hover{
+    color:#1Db954;
+}
+
+.header a{
+    font-size: 1.2vw;
+}
+
+.headerLinijaProstor{
+    
+    width:35vw;
+    height:1vw;
+}
+.headerLinija{
+    width:4vw;
+    background-color: #1DB954;
+    height:.1vw;
+    transform:translate(1.2vw);
+}
+
+.drustvene{
+    width:20vw;
+    margin-top:2vw;
+}
+
+.drustvene ul{
+    display:flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+.fa {
+    transform:scale(3);
+    color:white;
+}
+
+.fa-facebook:hover{
+    color:#4267B2
+}
+.fa-whatsapp:hover{
+    color:#25D366;
+}
+.fa-twitter:hover{
+    color:	#1DA1F2;
+}
+.fa-linkedin:hover{
+    color:#2867B2;
+}
+
+/* ABOUTTT */ 
+
+.about{
+    
+    margin-top:8vw;
+    height:50vw;
+    width:35vw;
+    margin-left:5vw;
+    padding:1vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about h2{
+    font-size:4vw;
+    margin-top:3vw;
+    margin-left:-2vw;
+}
+.about h4{
+    font-size:1.4vw;
+    margin-top:2vw;
+}
+
+.about p{
+    margin-top:2vw;
+    font-size:1.1vw;
+}
+
+#about .header{
+    opacity:0;
+    display:flex;
+    width:35vw;
+    justify-content: space-around;
+    margin-bottom:4vw;
+    position:fixed;
+    top:5vw;
+}
+
+#about .header a{
+    margin-top:2vw;
+}
+
+
+#about .headerLinija{
+    opacity:0;
+    position: fixed;
+    top:8.5vw;
+    left:11.6vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
