@@ -18,50 +18,47 @@ body a{
     font-family: "Varela Round";
     text-decoration: none;
 }
-
-#glavnaSekcija{
-    position: absolute;
-    top:0;
-    opacity:0;
+body{
+    overflow-x:hidden;
 }
 .background{
-
-    width:auto;
-    height:95vh;
-    position:fixed;
-    top:0;
-    z-index:-1;
-  
+    position: fixed;
 }
-.background img{
+
+#glavnaSekcija{
+    display:none;
+    opacity: 0;
+}
+
+.nevidljiviBlok{
+    height:1vw;
     width:100vw;
-    height:100vh;
+    color:white;
+    
+    z-index:5;
 }
 
-.introduction{
-    
+#uvod{
+    /*background-color: red;*/
+    position:relative;
+    top:8vw;
+    left:5vw;
     width:35vw;
-    height:400px;
+    height:35vw;
     display:flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    margin-top:15vw;
-    margin-left:5vw;
+    align-items: center;
     
 }
-
-.introduction h2{
-    font-size:3.5vw;
-    font-weight: bold;
+#uvod .naslov{
+    font-size:3vw;
+}
+#uvod .opis{
+    font-size:1.2vw;
 }
 
-#uvod .introductionP p{
-    font-size:1.4vw;
-    margin-top:1vw;
-}
-
-#uvod .header{
+.header{
     display:flex;
     width:35vw;
     justify-content: space-around;
@@ -125,56 +122,144 @@ body a{
 
 /* ABOUTTT */ 
 
-.about{
-    
-    margin-top:8vw;
-    height:50vw;
+
+#oMeni{
+    /*background-color: blue;*/
+    position:relative;
+    top:8vw;
+    left:5vw;
     width:35vw;
-    margin-left:5vw;
-    padding:1vw;
+    height:35vw;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top:5vw;
 }
 
-.about h2{
-    font-size:4vw;
-    margin-top:3vw;
-    margin-left:-2vw;
-}
-.about h4{
-    font-size:1.4vw;
+
+#oMeni .naslov{
+    font-size:3vw;
     margin-top:2vw;
+}
+#oMeni .opis{
+    margin-top:2vw;
+    font-size:1.2vw;
 }
 
-.about p{
+
+#oMeni .headerLinijaProstor{
+    
+    width:35vw;
+    height:1vw;
+}
+#oMeni .headerLinija{
+    width:4vw;
+    background-color: #1DB954;
+    height:.1vw;
+    transform:translate(7.7vw,5.4vw);
+}
+
+/* PROJEKTI */ 
+#projekti{
+    
+    position:relative;
+    top:8vw;
+    left:5vw;
+    width:35vw;
+    /*background-color: purple;*/
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:12vw;
+}
+
+
+#projekti .naslov{
+    font-size:3vw;
     margin-top:2vw;
+}
+#projekti .opis{
+    margin-top:2vw;
+    font-size:1.2vw;
+}
+
+
+#projekti .headerLinijaProstor{
+    
+    width:35vw;
+    height:1vw;
+}
+#projekti .headerLinija{
+    width:5vw;
+    background-color: #1DB954;
+    height:.1vw;
+    transform:translate(14.35vw,4.7vw);
+}
+
+#projekti .opis h4{
+    text-align: center;
+}
+
+#projekti .opis a{
+    color:yellow;   
+    
+}
+
+/* CONTACT */
+
+#contact{
+    
+    position:relative;
+    top:8vw;
+    left:5vw;
+    width:35vw;
+    /*background-color: rgb(6, 227, 235);*/
+    display:flex;
+    flex-direction: column;
+    margin-top:6vw;
+    margin-bottom:15vw;
+}
+
+#contact .naslov{
+    font-size:3vw;
+    margin-top:2vw;
+    text-align: center;
+    margin-bottom:2vw;
+}
+
+#contact .name{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:2vw;
+}
+
+#contact .headerLinijaProstor{
+    
+    width:35vw;
+    height:1vw;
+}
+#contact .headerLinija{
+    width:5vw;
+    background-color: #1DB954;
+    height:.1vw;
+    transform:translate(22vw,5.5vw);
+}
+
+#contact .name p{
+    font-size:1.2vw;
+}
+#contact .name input {
+    width:25vw;
+    height:2vw;
     font-size:1.1vw;
 }
 
-#about .header{
-    opacity:0;
-    display:flex;
-    width:35vw;
-    justify-content: space-around;
-    margin-bottom:4vw;
-    position:fixed;
-    top:5vw;
+#contact .blokovi .name:nth-child(4) input{
+    height:10vw;
 }
-
-#about .header a{
-    margin-top:2vw;
-}
-
-
-#about .headerLinija{
-    opacity:0;
-    position: fixed;
-    top:8.5vw;
-    left:11.6vw;
-}
-
 
 
 

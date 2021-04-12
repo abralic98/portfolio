@@ -97,12 +97,12 @@ body{
 }
 
 @keyframes stvoriHeader{
-    30%{opacity: 0;}
+    0%{opacity: 0;}
     100%{opacity: 1;}
 }
 @keyframes brisiHeader{
     0%{opacity: 1;}
-    40%{opacity: 0;}
+    100%{opacity: 0;}
 }
 
 
