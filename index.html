@@ -57,10 +57,10 @@
                 </div>
         
                 <div class="header">
-                    <p onclick="scrollTop()">Home</p>
-                    <a onclick="about()">About</a>
-                    <p>Projects</p>
-                    <p>Contact</p>
+                    <p onclick="Home()">Home</p>
+                    <p onclick="About()">About</a>
+                    <p onclick="Projects()">Projects</p>
+                    <p onclick="Contact()">Contact</p>
                     <a href="https://github.com/abralic98">Github</a>
                 </div>
         
@@ -72,9 +72,9 @@
     
                 <div class="drustvene">
                     <ul>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://www.facebook.com/ante.bralic/"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://wa.me/+3855183303/?text=Hello I Checked your portfolio and I would like to speak with you"><i class="fa fa-whatsapp"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/ante-bralic-bb6bb320b/"><i class="fa fa-linkedin"></i></a></li>
                     </ul>
                 </div>
             
@@ -88,10 +88,10 @@
             </div>
             <div class="nevidljiviBlok"></div>
             <div class="header">
-                <p onclick="scrollTop()">Home</p>
-                <a onclick="about()">About</a>
-                <p>Projects</p>
-                <p>Contact</p>
+                <p onclick="Home()">Home</p>
+                <p onclick="About()">About</a>
+                <p onclick="Projects()">Projects</p>
+                <p onclick="Contact()">Contact</p>
                 <a href="https://github.com/abralic98">Github</a>
             </div>
             <div class="naslov">
@@ -123,10 +123,10 @@
                 </div>
             </div>
             <div class="header">
-                <p>Home</p>
-                <a onclick="StvoriHeader(1)" href="#about">About</a>
-                <p>Projects</p>
-                <p>Contact</p>
+                <p onclick="Home()">Home</p>
+                <p onclick="About()">About</a>
+                <p onclick="Projects()">Projects</p>
+                <p onclick="Contact()">Contact</p>
                 <a href="https://github.com/abralic98">Github</a>
             </div>
             <div class="naslov">
@@ -139,7 +139,7 @@
                 <p>My first project, Im pretty sure I overwhelmed myself doing this as 1st project since we barely did any html and css on college. <br>
                 I learned everything from 0 and I manage to figure something out. Project is not finished but the core part I wanted to make is done.</p>
                 <br>
-                <a href="#">Mercedes-Benz</a>
+                <a href="https://abralic98.github.io/meckasajt/">Mercedes-Benz</a>
                 <br>
                 <br>
                 <br>
@@ -148,7 +148,7 @@
                 <p>Similar project as 1st one but here I focused more on CSS and JS.<br>
                 I expanded knowledge alot and I manage to reduce code a bit and make it more optimal</p>
                 <br>
-                <a href="#">Jojo's Katana Shop</a>
+                <a href="https://abralic98.github.io/katanashop/">Jojo's Katana Shop</a>
                 <br>
                 <br>
                 <br>
@@ -171,10 +171,10 @@
             </div>
             <div class="nevidljiviBlok"></div>
             <div class="header">
-                <p>Home</p>
-                <a onclick="StvoriHeader(1)" href="#about">About</a>
-                <p>Projects</p>
-                <p>Contact</p>
+                <p onclick="Home()">Home</p>
+                <a onclick="About()">About</a>
+                <p onclick="Projects()">Projects</p>
+                <p onclick="Contact()">Contact</p>
                 <a href="https://github.com/abralic98">Github</a>
             </div>
             <div class="naslov">
@@ -184,22 +184,26 @@
             <div class="blokovi">
                 <div class="name">
                     <p>Your Name</p>
-                    <input type="text">
+                    <input id="inputName" type="text">
                 </div>
     
                 <div class="name">
                     <p>Your Email</p>
-                    <input type="text">
+                    <input id="inputMejl" type="text">
                 </div>
     
                 <div class="name">
                     <p>Subject</p>
-                    <input type="text">
+                    <input id="inputSubject" type="text">
                 </div>
     
                 <div class="name">
                     <p>Message</p>
-                    <input type="text">
+                    <input id="inputPoruka" type="text">
+                </div>
+
+                <div onclick="sendMailCustomer()"class="send">
+                    <p>Send Message</p>
                 </div>
             </div>
             
@@ -214,5 +218,7 @@
     </div>
     <script src="index.js"></script>
     <script src="scroll.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script> 
+    
 </body>
 </html>

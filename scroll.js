@@ -9,7 +9,7 @@ window.addEventListener("scroll" ,() =>{
     let contentPosition1=nevidljivi[1].getBoundingClientRect().top;
     let contentPosition2=nevidljivi[2].getBoundingClientRect().top;
 
-    
+    console.log(contentPosition1+ "  " +window.innerHeight)
     if(contentPosition<window.innerHeight-40 ){
         header[0].style.animation="brisiHeader 1s forwards";
         headerLinija[0].style.animation="brisiHeader 1s forwards";
@@ -27,7 +27,7 @@ window.addEventListener("scroll" ,() =>{
         
     }
 
-    if(contentPosition1<window.innerHeight-40 ){
+    if(contentPosition1<window.innerHeight-70 ){
         header[1].style.animation="brisiHeader 1s forwards";
         headerLinija[1].style.animation="brisiHeader 1s forwards";
 
