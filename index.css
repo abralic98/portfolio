@@ -18,6 +18,9 @@ body a{
     font-family: "Varela Round";
     text-decoration: none;
 }
+.fon{
+    display:none;
+}
 body{
     overflow-x:hidden;
 }
@@ -280,6 +283,195 @@ body{
 
 #contact .send p{
     font-size:1vw;
+}
+
+
+@media only screen and (min-width: 250px) and (max-width:1000px){
+    .background{
+        display:none;
+    }
+
+    #glavnaSekcija{
+        display:none;
+    }
+
+    .fon a{
+        color:white;
+        font-family: "Varela Round";
+    }
+    .fon p{
+        color:White;
+        font-family: "Varela Round";
+    }
+
+    .fon h2{
+        color:White;
+        font-family: "Varela Round";
+    }
+
+    .fon{
+        /*display:flex;*/
+        flex-direction: column;
+        background-color:black;
+
+    }
+    
+    .fon #fonUvod{
+        display:Flex;
+        flex-direction: column;
+        height:100vh;
+        align-items: center;
+
+    }
+
+    .fon #fonUvod .fonHeader{
+        display: flex;
+        background-color: black;
+        width:100vw;  
+        justify-content: space-around;
+        height:20vw; 
+        font-size:4vw;
+        z-index:100;
+        align-items:center;
+        position:fixed;   
+    }
+
+    .fon #fonUvod .fonHeader a{
+        color:#1DB954;
+    }
+
+    .fon #fonUvod .naslov{
+        font-size:7vw;
+        margin-top:10vw;
+        padding-left:5vw;
+        padding-right:5vw;
+        text-align: center;
+        margin-bottom:5vw;
+        
+    }
+
+    .fon #fonUvod .opis{
+        font-size:5vw;
+        padding-left:5vw;
+        padding-right:5vw;
+    }
+
+    .fon #fonUvod .naslovText{
+        margin:auto;
+    }
+
+    .fon #fonUvod .drustvene{
+        width:80vw;
+        margin-bottom:10vw;
+        position:relative;
+        bottom:5vw;
+        height:10vw;
+    }
+
+    .fon #fonUvod .drustvene i{
+        font-size:3vw;
+    }
+
+
+    .fon #fonoMeni .naslov{
+        font-size:7vw;
+        margin-top:15vh;
+        padding-left:5vw;
+        padding-right:5vw;
+        text-align: center;
+        margin-bottom:5vw;
+        
+    }
+
+    .fon #fonoMeni .opis{
+        font-size:5vw;
+        padding-left:5vw;
+        padding-right:5vw;
+    }
+
+    #fonProjekti{
+        margin-top:20vw;
+    }
+    .fon #fonProjekti .naslov{
+        font-size:7vw;
+        margin-top:15vh;
+        padding-left:5vw;
+        padding-right:5vw;
+        text-align: center;
+        margin-bottom:5vw;    
+    }
+
+    .fon #fonProjekti .opis{
+        font-size:5vw;
+        padding-left:5vw;
+        padding-right:5vw;
+        
+    }
+    .fon #fonProjekti .opis a{
+        color:yellow;
+    }
+    
+
+    .fon #fonContact{
+        position:relative;
+        
+        width:100vw;
+        /*background-color: rgb(6, 227, 235);*/
+        display:flex;
+        flex-direction: column;
+        margin-top:20vw;
+        margin-bottom:15vw;
+    }
+
+
+    .fon #fonContact .naslov{
+        font-size:7vw;
+        margin-top:2vw;
+        text-align: center;
+        margin-bottom:10vw;
+    }
+    
+    .fon #fonContact .name{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom:2vw;
+    }
+
+    .fon #fonContact p{
+        font-size:4vw;
+    }
+    .fon #fonContact input {
+        width:80vw;
+        height:10vw;
+        font-size:4vw;
+        font-family: "Varela Round";
+    }
+
+    .fon #fonContact .send{
+        width:80vw;
+        height:10vw;
+        background-color: #1DB954;
+        color:white;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 2vw;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:10vw;
+        
+    }
+    .fon #fonContact .send:hover{
+        background-color: #02bb43;
+    }
+    
+    .fon #fonContact .send p{
+        font-size:4vw;
+    }
+
+    
 }
 
 

@@ -1,6 +1,10 @@
 function Loading(){
-    
-    setTimeout(Loading1,6000);
+    if(window.innerWidth>1000){
+        setTimeout(Loading1,1000);
+    }
+    if(window.innerWidth<=1000){
+        setTimeout(LoadingNone,1000);
+    }
 }
 
 function Loading1(){
@@ -8,11 +12,12 @@ function Loading1(){
     document.getElementById("glavnaSekcija").style.animation="stvoriMainSekciju 5s forwards";
     document.getElementById("sekcija").style.animation="nestaniLoader 2s forwards";
     
-    setTimeout(LoadingNone,2000);
+    setTimeout(LoadingNone,1000);
 }
 
 function LoadingNone(){
     document.getElementById("sekcija").style.display="none";
+    document.getElementsByClassName("fon")[0].style.display="flex";
 }
 
 function Home(){
@@ -48,7 +53,7 @@ function sendMailCustomer(){
         Subject : "no-reply",
         Body : `Thank you for contacting me ${ime}. I recieved your message and I will respond as soon as possible`
     }).then(
-      message => alert("PogledajderMejl")
+      
     );
 }
 
@@ -64,10 +69,54 @@ function sendMailToMe(){
         To : "ante.bralic2@gmail.com",
         From : "abralic98portfolio@gmail.com",
         Subject : "Imas narudzbu",
-        Body : `Neki ${ime} te hoce kontaktirat sa mejla ${mejl} i njegova Naslov  glasi ${naslov} sa porukokm ${poruka}`
+        Body : `Neki ${ime} te hoce kontaktirat sa mejla ${mejl} i njegova Naslov  glasi ${naslov} sa porukom ${poruka}`
     }).then(
-      message => alert("PogledajderMejl")
+      
     );
 }
+
+
+function sendMailCustomerFon(){
+    let ime=document.getElementById("inputNameFon").value;
+    let mejl=document.getElementById("inputMejlFon").value;
+    let poruka=document.getElementById("inputPorukaFon").value;
+    let naslov=document.getElementById("inputSubjectFon").value;
+    sendMailToMeFon();
+    Email.send({
+        Host : "smtp.gmail.com",
+        Username : "abralic98portfolio@gmail.com",
+        Password : "biznisbajo98",
+        To : mejl,
+        From : "abralic98portfolio@gmail.com",
+        Subject : "no-reply",
+        Body : `Thank you for contacting me ${ime}. I recieved your message and I will respond as soon as possible`
+    }).then(
+      
+    );
+}
+
+function sendMailToMeFon(){
+    let ime=document.getElementById("inputNameFon").value;
+    let mejl=document.getElementById("inputMejlFon").value;
+    let poruka=document.getElementById("inputPorukaFon").value;
+    let naslov=document.getElementById("inputSubjectFon").value;
+    setTimeout(Reload,1000)
+    Email.send({
+        Host : "smtp.gmail.com",
+        Username : "abralic98portfolio@gmail.com",
+        Password : "biznisbajo98",
+        To : "ante.bralic2@gmail.com",
+        From : "abralic98portfolio@gmail.com",
+        Subject : "Imas narudzbu",
+        Body : `Neki ${ime} te hoce kontaktirat sa mejla ${mejl} i njegova Naslov  glasi ${naslov} sa porukom ${poruka}`
+    }).then(
+      
+    );
+}
+
+function Reload(){
+    window.location.reload(true);
+}
+
 
 
